@@ -1233,7 +1233,7 @@ externals['glob'] = 'next/dist/compiled/glob'
 export async function ncc_glob(task, opts) {
   await task
     .source(relative(__dirname, require.resolve('glob')))
-    .ncc({ packageName: 'glob', externals })
+    .ncc({ packageName: 'glob' })
     .target('src/compiled/glob')
 }
 // eslint-disable-next-line camelcase
